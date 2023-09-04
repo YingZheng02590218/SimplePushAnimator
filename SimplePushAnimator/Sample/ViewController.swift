@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextTapped(sender: UIButton) {
-        let viewController = SecondViewController.instantiate()
-        presentViewController(viewController, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let viewController = SecondViewController.instantiate()
+            self.present(viewController, animated: true, completion: nil)
+        }
     }
 }
 

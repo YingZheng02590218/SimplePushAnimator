@@ -12,8 +12,9 @@ class SecondViewController: UIViewController {
     private var transitioner: Transitioner?
     
     class func instantiate() -> SecondViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("Second") as! SecondViewController
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "Second") as! SecondViewController
+        viewController.modalPresentationStyle = .fullScreen // 重要
         viewController.transitioner = Transitioner(style: .SimplePush, viewController: viewController)
         return viewController
     }
@@ -25,6 +26,6 @@ class SecondViewController: UIViewController {
 
 extension SecondViewController {
     @IBAction func buttonTapped(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }

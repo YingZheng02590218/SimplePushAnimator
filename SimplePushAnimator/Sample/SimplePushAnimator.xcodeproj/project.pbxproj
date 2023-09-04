@@ -108,6 +108,7 @@
 				TargetAttributes = {
 					8F8274B91B3823500074C7A9 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = T526NZN54U;
 					};
 				};
 			};
@@ -116,6 +117,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -257,11 +259,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = T526NZN54U;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.kosuke.kito.SimplePushAnimator;
 				PRODUCT_NAME = SimplePushAnimator;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -269,11 +273,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = T526NZN54U;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.kosuke.kito.SimplePushAnimator;
 				PRODUCT_NAME = SimplePushAnimator;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
